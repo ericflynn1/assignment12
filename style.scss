@@ -3,15 +3,19 @@ $primaryFont: 'Exo 2', sans-serif;
 body {
     display: block;
     font-family: 'Exo 2', sans-serif;
-    background-color: #33ccff;
+    // background-color: #33ccff;
     font-size: 18px;
     padding: 25px;
-    
+    background-color: deepskyblue;
+    // background-image: url('https://em.wattpad.com/723429b5408f44be8048be35e0dfd9c8de42ac2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4e2d57696b6d3061484c4f4546673d3d2d3231393435333037372e313433326631343539363734393665642e676966?s=fit&w=1280&h=1280');
+    background-size: cover;
 }
 #chatbox {
-display: flex;
+display: block;
 width: 98%;
-height: 300px;;
+height: 300px;
+overflow: none;
+position: relative;
 background-color: antiquewhite;
 border: 2px solid black;
 flex-wrap: wrap;
@@ -36,7 +40,7 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 .allinput {
     display: flex;
     float: bottom-left;
-    text-align: center;
+    
     padding-top: 15px;
     flex-wrap: wrap;
     font-family: $primaryFont;
@@ -48,6 +52,7 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     height: 50px;
     font-size: 115%;
     margin-right: 20px;
+    overflow: auto;
     flex-wrap: wrap;
     font-family: $primaryFont;
 }
@@ -60,4 +65,39 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     font-size: 115%;
     flex-wrap: wrap;
     font-family: $primaryFont;
+}
+.sentmsg {
+    display: inline-flex;
+    float: right;
+    background-color: skyblue;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-right: 10px;
+    height: 10%;
+    position: relative;
+    overflow: auto;
+    bottom: 0;
+    max-height: 250px;
+    text-align: right;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-radius: 6px;
+    margin: 15px;
+    margin-left: 95%;
+}
+.recievemsg {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px;
+    padding-left: 10px;
+    height: 10%;
+    margin-right: 95%;
+    border-radius: 6px;
+    background-color: lightgrey;
+    margin: 15px;
+    overflow: auto;
+    position: relative;
+    bottom: 0;
+    max-height: 250px;
 }
