@@ -10,7 +10,7 @@ body {
   display: block;
   width: 98%;
   height: 300px;
-  overflow: none;
+  overflow: scroll;
   position: relative;
   background-color: antiquewhite;
   border: 2px solid black;
@@ -95,4 +95,10 @@ body {
   bottom: 0;
   max-height: 250px; }
 
+
+.underline{
+  display: inline-block;
+  padding-right: 5px;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */
